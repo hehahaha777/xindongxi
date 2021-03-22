@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             counter++
         }
         else{
-            counter+=2
+            counter+=5
         }
 
         txv.text = counter.toString()
