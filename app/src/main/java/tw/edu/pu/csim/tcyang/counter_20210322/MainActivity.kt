@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         txv.setOnClickListener(this)
+        img.setOnClickListener(this)
     }
 
 
@@ -33,7 +34,13 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        counter+=2
+        if (v == txv){
+            counter++
+        }
+        else{
+            counter+=2
+        }
+
         txv.text = counter.toString()
     }
 
